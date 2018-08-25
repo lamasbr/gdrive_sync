@@ -1,6 +1,6 @@
 FROM golang:alpine
 
-MAINTAINER lamasbr <falecom@interlli.ga>
+LABEL maintainer="lamasbr <falecom@interlli.ga>"
 
 RUN \
     apk add gcc git && \
