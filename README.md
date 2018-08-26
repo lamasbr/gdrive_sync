@@ -1,11 +1,11 @@
 # Google Drive sync tool (push/pull)
+[![Build Status](https://travis-ci.org/lamasbr/gdrive_sync.svg?branch=master)](https://travis-ci.org/lamasbr/gdrive_sync) [![Docker Pulls](https://img.shields.io/docker/pulls/lamasbr/gdrive_sync.svg)](https://hub.docker.com/r/lamasbr/gdrive_sync/) [![Docker Automated build](https://img.shields.io/docker/automated/lamasbr/gdrive_sync.svg)](https://hub.docker.com/r/lamasbr/gdrive_sync/)
 
 Push or pull directory/files to your Google Drive account using this docker image
 
 This image use Google Drive client for command line called drive (https://github.com/odeke-em/drive)
 
 ## Usage
-
 ### Starting
 First, you need start the container using the command:
 
@@ -18,13 +18,11 @@ Using shares: `docker run -ti --name <container_name> -v /path/on/host:/gdrive/s
 You can use multiple volumes or shares in a single command too, ex: `docker run -ti --name <container_name> -v VOLUME_YOU_WANT_TO_USE:/gdrive/volume -v /path/on/host:/gdrive/share -d lamasbr/gdrive_sync`.
 
 ### Init the directories
-
 After this, you need to init the directories using the absolute path (you will be prompted to authenticate with your Google Account):
 
 `docker exec -it <container_name> drive init <path you want to share>`
 
 ### Pull/Push commands
-
 To pull files from your Google Drive account:
 
 `docker exec -it <container_name> drive pull <path>`
