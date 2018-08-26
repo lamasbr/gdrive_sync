@@ -1,5 +1,5 @@
 # Google Drive sync tool (push/pull)
-[![Build Status](https://travis-ci.org/lamasbr/gdrive_sync.svg?branch=master)](https://travis-ci.org/lamasbr/gdrive_sync) [![Docker Pulls](https://img.shields.io/docker/pulls/lamasbr/gdrive_sync.svg)](https://hub.docker.com/r/lamasbr/gdrive_sync/) [![Docker Automated build](https://img.shields.io/docker/automated/lamasbr/gdrive_sync.svg)](https://hub.docker.com/r/lamasbr/gdrive_sync/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/lamasbr/gdrive_sync.svg)](https://hub.docker.com/r/lamasbr/gdrive_sync/) [![Docker Automated build](https://img.shields.io/docker/automated/lamasbr/gdrive_sync.svg)](https://hub.docker.com/r/lamasbr/gdrive_sync/)
 
 Push or pull directory/files to your Google Drive account using this docker image
 
